@@ -1,23 +1,14 @@
-
-import './App.css';
-
-import { useState } from 'react';
+import React from "react";
 
 const App = () => {
 
-  const [counter, setCounter] = useState(0);
+    return (
+            <div>
+                <h1>Hello World</h1>
+            </div>
+        );
 
-  const isNameShowing = false;
-
-  return (
-    <div className="App">
-    
-    <button onClick={()=> setCounter(prevCount=> prevCount -1)}>-</button>
-    <h1>{counter}</h1>
-    <button onClick={()=> setCounter(prevCount=> prevCount +1)}>+</button>
-
-    </div>
-  );
 }
+
 
 export default App;

@@ -1,6 +1,6 @@
 # React
 
-![Untitled](React%20f4741c7175f24d2ba35de5f75498b0d8/Untitled.png)
+![Untitled](./react/Untitled.png)
 
 Today I studied with a youtube crash course to get an overview of what is React.js and learn the basics and principles of React. 
 

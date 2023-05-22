@@ -1,6 +1,6 @@
 # React
 
-![Untitled](./react/Untitled.png)
+![Untitled](./images/1.png)
 
 Today I studied with a youtube crash course to get an overview of what is React.js and learn the basics and principles of React. 
 

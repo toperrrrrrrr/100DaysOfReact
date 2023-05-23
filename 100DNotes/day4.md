@@ -77,3 +77,6 @@ const myElement = <h1>{(x) < 10 ? "Hello" : "Goodbye"}</h1>;
 ```
 
 *props means properties*
+
+React Class components are not that used normally anymore but still good to know how to use. Function Components are the new things that people are using.
+

@@ -24,11 +24,6 @@ const Login = () => {
     }
   };
 
-  const GithubCommitReminder = () => 
-    useEffect(() => {
-      checkCommits();
-    }, []);
-
   return (
     <div className="login-container">
       {isLoggedIn ? 

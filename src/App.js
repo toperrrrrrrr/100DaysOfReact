@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Login.css';
+
+const githubUsername = 'toperrrrrrrr';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -22,11 +24,15 @@ const Login = () => {
     }
   };
 
+  const GithubCommitReminder = () => 
+    useEffect(() => {
+      checkCommits();
+    }, []);
+
   return (
     <div className="login-container">
-      {isLoggedIn ? (
-        <div className="welcome-message">Welcome, {username}!</div>
-      ) : (
+      {isLoggedIn ? 
+    <h1>lol</h1> : (
         <form className="login-form" onSubmit={handleSubmit}>
           <input
             type="text"

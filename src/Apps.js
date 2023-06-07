@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Login.css';
 
 function Logins(){
 
@@ -6,23 +7,26 @@ function Logins(){
   const [userPass, setUserpass] = useState("");
 
   return (
+    <>
+    <header></header>
+      <section>
 
-    <div>
-    <input
-      type="text"
-      value={userName}
-      onChange={(e) => setUserName(e.target.value)}/>
-    
-    <input 
-      type="password" 
-      value={userPass}
-      onChange={(as) => setUserpass (as.target.value)}/>
+        <h1>twst</h1>
+      <input
+        type="text"
+        value={userName}
+        onChange={(e) => setUserName(e.target.value)}/>
+      
+      <input 
+        type="password" 
+        value={userPass}
+        onChange={(as) => setUserpass (as.target.value)}/>
 
-    <input type="submit"></input>
-    
-    <h1>{userName}</h1>
-    <h1>This is my password {userPass}</h1>
-    </div>
+      <input type="submit"></input>
+      </section>
+<div className="curve"></div>
+      <footer></footer>
+    </>
   );
 };
 

@@ -22,9 +22,76 @@ body{
   }
   
 
-  .curve{
-    position: absolute;
-    height: 225px;
-    width: 100%;
-    bottom: 0;
+  :root {
+    view-transition-name: none;
+  }
+  
+  #container {
+    view-transition-name: container;
+  }
+  
+  @keyframes slide-out-to-left {
+    to {
+      translate: -100% 0;
+    }
+  }
+  @keyframes slide-in-from-right {
+    from {
+      translate: 100% 0;
+    }
+  }
+  @keyframes slide-in-from-left {
+    from {
+      translate: -100% 0;
+    }
+  }
+  @keyframes slide-out-to-right {
+    to {
+      translate: 100% 0;
+    }
+  }
+  
+  ::view-transition-group(*) {
+    overflow: hidden;
+  }
+  ::view-transition-old(*) {
+    animation-name: slide-out-to-left;
+  }
+  ::view-transition-new(*) {
+    animation-name: slide-in-from-right;
+  }
+  .backwards::view-transition-old(*) {
+    animation-name: slide-out-to-right;
+  }
+  .backwards::view-transition-new(*) {
+    animation-name: slide-in-from-left;
+  }
+  
+  .browser {
+    --red: #ea4336;
+    --yellow: #fbbd05;
+    --green: #34a853;
+    background: linear-gradient(to bottom,#0003 0 0,2.5rem,#0000 0 0),radial-gradient(circle at 2rem 1.25rem,var(--red) 0 0,.5rem,#0000 0 0),radial-gradient(circle at 3.5rem 1.25rem,var(--yellow) 0 0,.5rem,#0000 0 0),radial-gradient(circle at 5rem 1.25rem,var(--green) 0 0,.5rem,#0000 0 0),conic-gradient(from 25deg at 35% 75%,#ffffff09,85%,#fff0);
+    border-radius: 0.25rem;
+    border: 1px solid #333;
+  }
+  
+  #container {
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+  }
+  
+  b {
+    font-size: 48px;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    display: grid;
+    place-content: center;
   }

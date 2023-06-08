@@ -7,24 +7,29 @@ function Logins(){
   const [userPass, setUserpass] = useState("");
 
   return (
+ 
     <>
     <header></header>
       <section>
+        <div class="browser">
+          <div id="container">
 
-        <h1>twst</h1>
-      <input
-        type="text"
-        value={userName}
-        onChange={(e) => setUserName(e.target.value)}/>
-      
-      <input 
-        type="password" 
-        value={userPass}
-        onChange={(as) => setUserpass (as.target.value)}/>
+            <h1>Hello {userName}</h1>
+              <input
+                type="text"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}/>
+              
+              <input 
+                type="password" 
+                value={userPass}
+                onChange={(as) => setUserpass (as.target.value)}/>
 
-      <input type="submit"></input>
+              <input type="submit"></input>
+          </div>
+        </div>
       </section>
-<div className="curve"></div>
+
       <footer></footer>
     </>
   );

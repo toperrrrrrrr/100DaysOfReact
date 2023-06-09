@@ -14,14 +14,16 @@ function Logins(){
         <div class="browser">
           <div id="container">
 
-            <h1>Hello {userName}</h1>
-              <input
+            <h1>Login</h1>
+            <label ></label>
+              <input className="creds"
                 type="text"
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}/>
               
               <input 
                 type="password" 
+                className="creds"
                 value={userPass}
                 onChange={(as) => setUserpass (as.target.value)}/>
 
